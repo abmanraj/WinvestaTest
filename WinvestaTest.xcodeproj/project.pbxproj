@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		5230952F264942780074ADC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5230952D264942780074ADC4 /* LaunchScreen.storyboard */; };
 		5230953A264942790074ADC4 /* WinvestaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52309539264942790074ADC4 /* WinvestaTestTests.swift */; };
 		52309545264942790074ADC4 /* WinvestaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52309544264942790074ADC4 /* WinvestaTestUITests.swift */; };
+		52309562264946700074ADC4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52309561264946700074ADC4 /* Reachability.swift */; };
 		631F69048E7FDDF1F8440A62 /* Pods_WinvestaTest_WinvestaTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0F3DBFD41860E5D6C255C4 /* Pods_WinvestaTest_WinvestaTestUITests.framework */; };
 		A72B159F498FE23A6459988D /* Pods_WinvestaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF2B066190238389408E41C /* Pods_WinvestaTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		52309540264942790074ADC4 /* WinvestaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinvestaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52309544264942790074ADC4 /* WinvestaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinvestaTestUITests.swift; sourceTree = "<group>"; };
 		52309546264942790074ADC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52309561264946700074ADC4 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A211B4E4C2003E5EEAB5EC67 /* Pods-WinvestaTest-WinvestaTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinvestaTest-WinvestaTestUITests.release.xcconfig"; path = "Target Support Files/Pods-WinvestaTest-WinvestaTestUITests/Pods-WinvestaTest-WinvestaTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C2FFF0845E459CFE9E0C6B4A /* Pods_WinvestaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WinvestaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF2B066190238389408E41C /* Pods_WinvestaTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WinvestaTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +103,6 @@
 				16004B5F1756AA8C391FA0B3 /* Pods-WinvestaTestTests.debug.xcconfig */,
 				FBFE6F73A3493770B6514AB8 /* Pods-WinvestaTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +148,7 @@
 				5230952B264942780074ADC4 /* Assets.xcassets */,
 				5230952D264942780074ADC4 /* LaunchScreen.storyboard */,
 				52309530264942780074ADC4 /* Info.plist */,
+				52309560264946700074ADC4 /* Helpers */,
 			);
 			path = WinvestaTest;
 			sourceTree = "<group>";
@@ -167,6 +169,14 @@
 				52309546264942790074ADC4 /* Info.plist */,
 			);
 			path = WinvestaTestUITests;
+			sourceTree = "<group>";
+		};
+		52309560264946700074ADC4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52309561264946700074ADC4 /* Reachability.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +419,7 @@
 			files = (
 				52309527264942750074ADC4 /* ViewController.swift in Sources */,
 				52309523264942750074ADC4 /* AppDelegate.swift in Sources */,
+				52309562264946700074ADC4 /* Reachability.swift in Sources */,
 				52309525264942750074ADC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
